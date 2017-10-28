@@ -1,0 +1,395 @@
+/* 
+	Resets defualt browser settings
+	reset.css
+*/
+a:active { outline:none; }
+body { line-height:1; color:black; background:white; }
+/*
+	Page Style
+*/
+body { 
+	font:normal 62.5%/1.5 Helvetica, Arial, sans-serif;
+	letter-spacing:0;
+	color:#434343;
+	background:#efefef url(../img/background.png) repeat top center;
+	padding:10px 0;
+	position:relative;
+	text-shadow:0 1px 0 rgba(255,255,255,.8);
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+#container {
+	padding-left: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	padding-top: 0px;
+	width: 580px;
+	margin:0 auto;
+	position:relative;
+	z-index:0;
+}
+
+#example {
+	width:600px;
+	height:350px;
+	position:relative;
+}
+
+#ribbon {
+	position:absolute;
+	top:-3px;
+	left:-15px;
+	z-index:500;
+}
+
+#frame {
+	position:absolute;
+	z-index:0;
+	width:739px;
+	height:341px;
+	top:-3px;
+	left:-80px;
+}
+
+/*
+	Slideshow
+*/
+
+#slides {
+	position:absolute;
+	top:15px;
+	left:4px;
+	z-index:100;
+}
+
+/*
+	Slides container
+	Important:
+	Set the width of your slides container
+	Set to display none, prevents content flash
+*/
+
+.slides_container {
+	width:570px;
+	overflow:hidden;
+	position:relative;
+	display:none;
+}
+
+/*
+	Each slide
+	Important:
+	Set the width of your slides
+	If height not specified height will be set by the slide content
+	Set to display block
+*/
+
+.slides_container div.slide {
+	width:570px;
+	height:270px;
+	display:block;
+}
+
+
+/*
+	Next/prev buttons
+*/
+
+#slides .next,#slides .prev {
+	position:absolute;
+	top:107px;
+	left:-39px;
+	width:24px;
+	height:43px;
+	display:block;
+	z-index:101;
+}
+
+#slides .next {
+	left:585px;
+}
+
+/*
+	Pagination
+*/
+
+.pagination {
+	margin:26px auto 0;
+	width:100px;
+}
+
+.pagination li {
+	float:left;
+	margin:0 1px;
+	list-style:none;
+}
+
+.pagination li a {
+	display:block;
+	width:12px;
+	height:0;
+	padding-top:12px;
+	background-image:url(../img/pagination.png);
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+}
+
+.pagination li.current a {
+	background-position:0 -12px;
+}
+
+/*
+	Footer
+*/
+
+#footer {
+	text-align:center;
+	width: 100%;
+	margin-top:9px;
+	padding:4.5px 0 18px;
+	border-top:1px solid #dfdfdf;
+}
+
+#footer p {
+	padding-right: 5px;
+	text-align: right;
+	float: none;
+	font-size:1.0em;
+}
+
+/*
+	Anchors
+*/
+
+a:link,a:visited {
+	color:#599100;
+	text-decoration:none;
+}
+
+a:hover,a:active {
+	color:#599100;
+	text-decoration:underline;
+}
+
+
+/*
+Mine
+*/
+#page-container { 
+position: relative;
+left: 0px;
+top: 0px;
+margin: auto;
+width: 973px;
+height: 2000px;
+}
+
+header .top-bar{
+	width: 100%;
+	border-width: 100%;
+	font-size: 12px;
+	text-align: center;
+	color: Black;
+	font-family: Arial;
+	background-color:  #D8D8D8;
+	height:6%;
+}
+header .top-bar img{
+	top: 2px;
+	border-right-color: white;
+	text-align: center;
+	position: relative;
+}
+header .banner{
+	width: 100%;
+	padding-top: 10px;
+	font-family: "Lucida Grande";
+	text-align: center;
+	color: Black;
+	font-size: 60px;
+}
+header nav{
+	text-align: center;
+	float: none;
+	position: relative;
+	display: inline;
+	border-width: 100%;
+}
+
+header nav li{
+	display: inline-block;
+	padding-right: 40px;
+	margin-right: 7px;
+	border-width: 5px;
+	border-style: solid;
+	position: relative;
+	text-align: center;
+	list-style-type: none;
+	float: none;
+	font-size:18px;
+	line-height: 2em;
+	text-transform:uppercase;
+	padding-left: 40px;
+	margin-left: 7px;
+}
+header nav li.active{
+	text-shadow: 0px 0px #fffbac;
+	background-color: #b3b3b3;
+}
+header nav img{
+	margin-top: 0px;
+	border-width: 100%;
+	text-align: center;
+	display: inline;
+	position: relative;
+	padding-top: 	0px;
+	padding-left: 10px;
+	float: none;
+}
+span{
+	margin-left: 50px;
+	position: relative;
+	text-align: center;
+	font-size: 14px;
+}.homepage-display tr{
+	width: 100%;
+	float: none;
+	position: relative;
+}
+.homepage-display td{
+	margin-left: 20px;
+	height: 100px;
+	width: 400px;
+	border-style: groove;
+	position: relative;
+	border-width: 1px;
+}
+.homepage-display h4{
+	padding-left: 10px;
+	position: relative;
+	float: none;
+	font-family: fantasy;
+	font-size: 20px;
+}
+.homepage-display p{
+	position: relative;
+	padding: 5px;
+	font-family: cursive;
+	font-size: 14px;
+}
+.homepage-display img{
+	float: none;
+	position: relative;
+}
+.bottom-nav td{
+	float: left;
+	position: relative;
+	padding-right: 30px;
+	padding-left: 30px;
+	font-size: 12px;
+	font-family: "Lucida Grande";
+	list-style-type: none;
+}
+.bottom-nav h6{
+	font-size: 13px;
+	font-family: "Comic Sans MS";
+}
+.bottom-nav tr{
+	width: 100%;
+	padding-left: 5px;
+	float: left;
+	position: relative;
+	text-align: justify;
+}
+.bottom-nav{
+	padding-bottom: 30px;
+	margin-top: 35px;
+	border-width: 2px;
+	border-style: ridge;
+}
+.bottom-nav img{
+	padding-top: 100px;
+	text-align: center;
+	float: right;
+	position: relative;
+}
+ul.product-list{
+	width:900px;
+	height:700px; 
+	margin-left:50px;
+	padding:50px;
+	text-align: center;
+	overflow: auto;
+	list-style:none; 
+}
+ul.product-list li{
+	display: block;
+	position: relative;
+	font-family: cursive;
+	width: 300 px; 
+	height: 320px;
+	padding: 20px;
+	float: left;
+	font-size: 14px; 
+	border:1px solid #CCC;	
+}
+
+.detailtext{
+	position:absolute;
+	right:20px;
+	top:40px;
+	width:230px;
+	height:300px;
+	}
+.detailphoto{
+	position:absolute;
+	left:20px;
+	top:100px;
+	width:300px;
+	}
+.title{
+	font-weight:bold;
+	font-size:250%;
+	}
+.content{
+	font-size:180%;
+	}
+.addtocart{
+	border: 1px solid #006;
+	}
+.mini{
+	width: 200px;
+	height: auto;
+	}
+
+#ShopCart form {
+	background:#FFF;
+	font-size:15px;
+	padding:20px;
+	border:1px solid #CCC;
+	width:250px;
+	margin-left:-110px;
+	display:none;
+	z-index: 100;
+}
+#ShopCart:hover form 
+{
+	display:block;position:absolute
+}
+
+.shopping{
+	float: right;
+	font-size: 14px;
+}
+
+section img{
+	padding-left:20px;
+}
+.pagination{
+	font-size: 14px;
+	text-align: right;
+	position: relative;
+	margin-top: 0;
+	margin-right: 30px;
+}

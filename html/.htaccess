@@ -1,0 +1,23 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+#RewriteCond %{HTTPS} !on
+#RewriteCond %{REQUEST_URI} ^(/admin.php)
+#RewriteRule (.*) https://secure.%{HTTP_HOST}%{REQUEST_URI}
+
+# RewriteEngine On 
+RewriteCond %{SERVER_PORT} 80 
+RewriteCond %{REQUEST_URI} !admin.php
+RewriteCond %{HTTP_HOST} secure.grp22.ierg4210.ie.cuhk.edu.hk
+RewriteRule ^(.*)$ https://secure.grp22.ierg4210.ie.cuhk.edu.hk/admin.php [R,L]
+
+# RewriteEngine On 
+RewriteCond %{SERVER_PORT} 80 
+RewriteCond %{REQUEST_URI} admin.php
+RewriteCond %{HTTP_HOST} grp22.ierg4210.ie.cuhk.edu.hk
+RewriteRule ^(.*)$ https://secure.grp22.ierg4210.ie.cuhk.edu.hk/admin.php [R,L]
+
+# RewriteEngine On 
+RewriteCond %{SERVER_PORT} 80
+RewriteCond %{HTTP_HOST} grp22.ierg4210.ie.cuhk.edu.hk
+RewriteRule ^(.*)$ https://secure.grp22.ierg4210.ie.cuhk.edu.hk/ [R,L]
