@@ -18,7 +18,7 @@
         scrolling="no" frameborder="0"></iframe>
        <div id="cart_container">
           <ul id="mainMenu">
-              <li><a href="https://www.shop45.ierg4210.org/admin.php">admin</a></li>
+              <li><a href="http://35.201.218.229/admin.php">admin</a></li>
           </ul>
             
           </div>
