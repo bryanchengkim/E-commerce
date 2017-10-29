@@ -1,10 +1,8 @@
 <?php
-function ierg4210_DB() {
+function myLib_DB() {
 	// connect to the database
-	// TODO: change the following path if needed
-	// Warning: NEVER put your db in a publicly accessible location
 	$db = new PDO('sqlite:/var/www/cart.db');
-	
+
 	// enable foreign key support
 	$db->query('PRAGMA foreign_keys = ON;');
 

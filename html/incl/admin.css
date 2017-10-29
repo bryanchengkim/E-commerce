@@ -1,0 +1,43 @@
+#mainMenu{
+
+}
+
+#mainMenu ul{
+	margin: 0; padding: 0; 
+	list-style-type: none; list-style-image: none; }
+
+
+#mainMenu ul li{
+	float: left;
+	display: inline; 
+	text-decoration:none;  margin: 4px;
+	 color: blue;
+	background: pink;
+}
+
+#mainMenu ul li:hover{
+	color: purple;
+	background: yellow; }
+	
+#mainMenu ul li input{
+	border:none;}
+	
+#acount{
+		float: left;
+	display: inline; 
+	text-decoration:none;  margin: 4px;
+	 color: blue;
+	background: pink;
+}
+#acount:hover{		
+	 color: blue;
+	background: pink;}
+
+article{
+	clear:both;}
+
+fieldset{width:400px}
+fieldset form label{clear:left;float:left;width:110px;line-height:29px}
+fieldset form div{padding:4px 0}
+input[type=text],input[type=number],select,textarea{width:200px}
+

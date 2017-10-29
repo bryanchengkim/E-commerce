@@ -12,7 +12,7 @@
 <?php 
 echo $_GET['nonce'];
 echo $_GET['ac'];
-        $db = new PDO('sqlite:/var/www/db/changepw.db');
+        $db = new PDO('sqlite:/var/www/db/changePw.db');
 	    $db->query('PRAGMA foreign_keys = ON;');
      	$db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
     	$q=$db->prepare('Select * From changepw Where email = ?');

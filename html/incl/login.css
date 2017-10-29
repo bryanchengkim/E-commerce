@@ -1,0 +1,22 @@
+
+fieldset
+{
+	border-radius:4px;
+	min-width: 300px;
+	width: 300px;
+	height: 150px;
+	position: absolute; 
+	top: 50%; 
+	left: 50%;
+	margin-top: -215px;
+	margin-left: -180px;
+	text-align: center;
+	
+	background: -moz-linear-gradient(270deg, #f0f0f0 0%, #bdbbbb 100%) white;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#bdbbbb)) white;
+}
+form label{clear:left;float:left;width:70px;line-height:29px}
+form input{line-height:20px;width 200px}
+
+
+

@@ -7,7 +7,7 @@
 	
 	    var html=new Array();
 		html.push('<fieldset><legend>Change Password</legend>');
-		html.push('<form id="changePwForm" method="POST" action="auth-process.php?action=<?php echo ($action = 'ChangePassword'); ?>">');
+		html.push('<form id="changePwForm" method="POST" action="process-user.php?action=ChangePassword">');
 		html.push('<label for="oldPw">New password</label>');
 		html.push('<div><input id="oldPw" name="oldPw" required="true" /></div>');
 		html.push('<label for="newPw">New password</label>');
